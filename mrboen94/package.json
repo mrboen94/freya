@@ -1,0 +1,21 @@
+{
+  "name": "mrboen94",
+  "displayName": "freya",
+  "description": "There are many themes like this, but this one is mine!",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.68.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Freya Light",
+        "uiTheme": "vs",
+        "path": "./themes/Freya Light-color-theme.json"
+      }
+    ]
+  }
+}
