@@ -2,6 +2,10 @@
   "name": "mrboen94",
   "displayName": "Freya Light Theme",
   "description": "A blue calm theme, made for fun and with love.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrboen94/freya"
+  },
   "version": "0.0.2",
   "engines": {
     "vscode": "^1.68.0"
