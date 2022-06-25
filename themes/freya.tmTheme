@@ -36,6 +36,8 @@ Created with ThemeCreator, https://github.com/mswift42/themecreator -->
 			<dict>
 				<key>foreground</key>
 				<string>#76b7c5</string>
+				<key>fontStyle</key>
+				<string>italic</string>
 			</dict>
 		</dict>
 		<dict>
@@ -46,7 +48,7 @@ Created with ThemeCreator, https://github.com/mswift42/themecreator -->
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string></string>
+				<string>bold</string>
 				<key>foreground</key>
 				<string>#2ca0a5</string>
 			</dict>
@@ -80,10 +82,10 @@ Created with ThemeCreator, https://github.com/mswift42/themecreator -->
 			<string>Class, Support</string>
 			<key>scope</key>
 			<string>entity.name.class, entity.name.type.class, support.type, support.class</string>
+			<key>fontStyle</key>
+			<string>bold</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
 				<string>#ff8a15</string>
 			</dict>
@@ -98,7 +100,7 @@ Created with ThemeCreator, https://github.com/mswift42/themecreator -->
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#79ad21</string>
+				<string>#31b934</string>
 			</dict>
 		</dict>
 		<dict>
@@ -174,7 +176,7 @@ Created with ThemeCreator, https://github.com/mswift42/themecreator -->
 				<key>background</key>
 				<string>#6B2737</string>
 				<key>fontStyle</key>
-				<string></string>
+				<string>italic strikethrough</string>
 				<key>foreground</key>
 				<string>#f3fffe</string>
 			</dict>
