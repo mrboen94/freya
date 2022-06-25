@@ -4,13 +4,13 @@
   "semanticHighlighting": true,
   "semanticTokenColors": {
     "enumMember": {
-      "foreground": "#0e464f"
+      "foreground": "#324b4d"
     },
     "variable.constant": {
-      "foreground": "#b84e00"
+      "foreground": "#00abb4"
     },
     "variable.defaultLibrary": {
-      "foreground": "#ff6b00"
+      "foreground": "#94b0b2"
     }
   },
   "tokenColors": [
@@ -18,7 +18,7 @@
       "name": "unison punctuation",
       "scope": "punctuation.definition.delayed.unison,punctuation.definition.list.begin.unison,punctuation.definition.list.end.unison,punctuation.definition.ability.begin.unison,punctuation.definition.ability.end.unison,punctuation.operator.assignment.as.unison,punctuation.separator.pipe.unison,punctuation.separator.delimiter.unison,punctuation.definition.hash.unison",
       "settings": {
-        "foreground": "#ff0078"
+        "foreground": "#048e94"
       }
     },
     {
