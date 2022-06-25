@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Class",
+    "scope": "entity.name.class",
+    "settings": {
+      "fontStyle": "bold",
+      "foreground": "#ff8a15"
+    }
+  },
+  {
+    "name": "Class supports",
+    "scope": "entity.name.class.support, support.type, support.class",
+    "settings": {
+      "foreground": "#ff8a15"
+    }
+  }
+]

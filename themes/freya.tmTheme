@@ -81,15 +81,27 @@ Created with ThemeCreator, https://github.com/mswift42/themecreator -->
 			<key>name</key>
 			<string>Class, Support</string>
 			<key>scope</key>
-			<string>entity.name.class, entity.name.type.class, support.type, support.class</string>
-			<key>fontStyle</key>
-			<string>bold</string>
+			<string>entity.name.type.class, support.type, support.class</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#ff8a15</string>
 			</dict>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>Class, Support</string>
+			<key>scope</key>
+			<string>entity.name.class</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#ff8a15</string>
+			</dict>
+		</dict>
+
 		<dict>
 			<key>name</key>
 			<string>String, Symbols, Inherited Class, Markup Heading, GitGutter inserted</string>
@@ -137,7 +149,7 @@ Created with ThemeCreator, https://github.com/mswift42/themecreator -->
 				<key>fontStyle</key>
 				<string>bold</string>
 				<key>foreground</key>
-				<string>#FF595E</string>
+				<string>#00abb4</string>
 			</dict>
 		</dict>
 		<dict>
