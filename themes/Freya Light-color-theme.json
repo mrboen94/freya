@@ -81,7 +81,7 @@
       "name": "Support variable",
       "scope": "support.other.variable",
       "settings": {
-        "foreground": "#1F271B",
+        "foreground": "#1F271B"
       }
     },
     {
@@ -134,7 +134,7 @@
       "name": "Other, const. => etc.",
       "scope": "storage.type",
       "settings": {
-        "foreground": "#f77700",
+        "foreground": "#f77700"
       }
     },
     {
@@ -181,7 +181,7 @@
       "name": "default",
       "scope": "keyword.control.default",
       "settings": {
-        "foreground": "#1f72be",
+        "foreground": "#1f72be"
       }
     },
     {
@@ -205,6 +205,44 @@
       "scope": "keyword.operator",
       "settings": {
         "foreground": "#6d2200"
+      }
+    },
+    {
+      "name": "numerical constants",
+      "scope": "constant.numeric.decimal",
+      "settings": {
+        "foreground": "#c57600"
+      }
+    },
+    {
+      "name": "json properties",
+      "scope": "support.type.property-name.json",
+      "settings": {
+        "foreground": "#d10057",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "json numbers",
+      "scope": "constant.numeric.json",
+      "settings": {
+        "foreground": "#da8300"
+      }
+    },
+    {
+      "name": "constant language json",
+      "scope": "constant.language.json",
+      "settings": {
+        "foreground": "#da00ab",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Json strings",
+      "scope": "string.quoted.double.json",
+      "settings": {
+        "foreground": "#01a783",
+        "fontStyle": "normal"
       }
     }
   ],
@@ -282,7 +320,7 @@
     "inputOption.activeForeground": "#003b49",
     "input.placeholderForeground": "#58c3c9",
     "textLink.foreground": "#ff78a4",
-    "editor.background": "#eef1f1",
+    "editor.background": "#f1f8f8",
     "editor.foreground": "#000c11",
     "editorLineNumber.foreground": "#00abb4",
     "editorCursor.foreground": "#357580",
