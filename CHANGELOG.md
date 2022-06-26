@@ -1,9 +1,17 @@
 # Change Log
 
-All notable changes to the "mrboen94" extension will be documented in this file.
+Currently in baby stages, change log will have to be fixed later
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
+## [0.0.5]
+
+- Constant color changes
+- Adding some custom operator colors and some customizations for JS/TS
+
+## [0.0.2 - 0.0.4]
+
+- Testing of different ways to theme vscode
+
+## [0.0.1]
 
 - Initial release
