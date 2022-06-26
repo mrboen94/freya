@@ -78,13 +78,6 @@
       }
     },
     {
-      "name": "variable",
-      "scope": "variable",
-      "settings": {
-        "foreground": "#009e91"
-      }
-    },
-    {
       "name": "Support variable",
       "scope": "support.other.variable",
       "settings": {
@@ -118,14 +111,100 @@
       "name": "String Link, Regular Expression...",
       "scope": "string.other.link, string.regexp, meta.tag, declaration.tag, markup.deleted.git_gutter",
       "settings": {
-        "foreground": "#1F271B"
+        "foreground": "#30548a"
       }
     },
     {
       "name": "String",
       "scope": "string, constant.other.symbol, entity.other.inherited-class, entity.name.filename, markup.heading, markup.inserted.git_gutter",
       "settings": {
+        "fontStyle": "underline",
         "foreground": "#1f72be"
+      }
+    },
+    {
+      "name": "Template Strings",
+      "scope": "string.template",
+      "settings": {
+        "fontStyle": "underline",
+        "foreground": "#1f72be"
+      }
+    },
+    {
+      "name": "Other, const. => etc.",
+      "scope": "storage.type",
+      "settings": {
+        "foreground": "#f77700",
+      }
+    },
+    {
+      "name": "Imports etc.",
+      "scope": "keyword.control.import, keyword.control.from",
+      "settings": {
+        "foreground": "#1f72be",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Null values",
+      "scope": "constant.language.null",
+      "settings": {
+        "foreground": "#f77700",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Conditional statements",
+      "scope": "keyword.control.conditional",
+      "settings": {
+        "foreground": "#1f72be",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Flow, return statements etc.",
+      "scope": "keyword.control.flow",
+      "settings": {
+        "foreground": "#1f72be",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "export",
+      "scope": "keyword.control.export",
+      "settings": {
+        "foreground": "#1f72be",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "default",
+      "scope": "keyword.control.default",
+      "settings": {
+        "foreground": "#1f72be",
+      }
+    },
+    {
+      "name": "boolean true",
+      "scope": "constant.language.boolean.true",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#c500bb"
+      }
+    },
+    {
+      "name": "boolean false",
+      "scope": "constant.language.boolean.false",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#c500bb"
+      }
+    },
+    {
+      "name": "operators",
+      "scope": "keyword.operator",
+      "settings": {
+        "foreground": "#6d2200"
       }
     }
   ],
@@ -208,8 +287,8 @@
     "editorLineNumber.foreground": "#00abb4",
     "editorCursor.foreground": "#357580",
     "editorCursor.background": "#f5fffe",
-    "editor.selectionBackground": "#e5eeed",
-    "editor.inactiveSelectionBackground": "#e5ebf1",
+    "editor.selectionBackground": "#d0d4da",
+    "editor.inactiveSelectionBackground": "#dde1e6",
     "editorWhitespace.foreground": "#33333333",
     "editor.selectionHighlightBackground": "#add6ff80",
     "editor.selectionHighlightBorder": "#495F77",
@@ -348,14 +427,13 @@
     "editorHoverWidget.background": "#ffffff",
     "editorHoverWidget.border": "#c8c8c8",
     "peekView.border": "#357580",
-    "peekViewEditor.background": "#eef1f1",
-    "peekViewEditorGutter.background": "#eef1f1",
-    "peekViewEditor.matchHighlightBackground": "#c9f7ff",
-    "peekViewEditor.matchHighlightBorder": "#c9f7ff",
-    "peekViewResult.background": "#eef1f1",
+    "peekViewEditor.background": "#ebe4de",
+    "peekViewEditorGutter.background": "#ebe4de",
+    "peekViewEditor.matchHighlightBackground": "#883f0041",
+    "peekViewResult.background": "#cee6e6",
     "peekViewResult.fileForeground": "#1e1e1e",
     "peekViewResult.lineForeground": "#357580",
-    "peekViewResult.matchHighlightBackground": "#a1f1ff48",
+    "peekViewResult.matchHighlightBackground": "#29616b48",
     "peekViewResult.selectionBackground": "#c9f7ff",
     "peekViewResult.selectionForeground": "#357580",
     "peekViewTitle.background": "#ffffff",
@@ -372,7 +450,7 @@
     "minimapGutter.modifiedBackground": "#29cdff",
     "minimapGutter.deletedBackground": "#ff0083",
     "minimap.findMatchHighlight": "#0026ff",
-    "minimap.selectionHighlight": "#ee5a04",
+    "minimap.selectionHighlight": "#e9b79a",
     "minimap.errorHighlight": "#c40000",
     "minimap.warningHighlight": "#ffb700",
     "minimap.background": "#e2f1f1",
