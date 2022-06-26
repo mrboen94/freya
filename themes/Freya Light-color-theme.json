@@ -244,6 +244,105 @@
         "foreground": "#01a783",
         "fontStyle": "normal"
       }
+    },
+    {
+      "name": "Json punctuation",
+      "scope": "punctuation.definition.dictionary, punctuation.separator",
+      "settings": {
+        "foreground": "#bbbbbb",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markdown Headings",
+      "scope": "markup.heading.markdown",
+      "settings": {
+        "foreground": "#ff3985",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markdown bold",
+      "scope": "markup.bold",
+      "settings": {
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markdown italic",
+      "scope": "markup.italic",
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Markdown code",
+      "scope": "markup.inline.raw",
+      "settings": {
+        "foreground": "#ff3985",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markdown link description and title",
+      "scope": "string.other.link.description, string.other.link.title",
+      "settings": {
+        "foreground": "#ff3985",
+        "fontStyle": "normal"
+      }
+    },
+    {
+      "name": "Markdown list",
+      "scope": "punctuation.definition.list",
+      "settings": {
+        "foreground": "#ff3985",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markdown list content",
+      "scope": "markup.list",
+      "settings": {
+        "foreground": "#494949",
+        "fontStyle": "normal"
+      }
+    },
+    {
+      "name": "Markdown link url",
+      "scope": "string.other.link.url",
+      "settings": {
+        "foreground": "#ffa339",
+        "fontStyle": "underline"
+      }
+    },
+    {
+      "name": "Markdown quote",
+      "scope": "markup.quote",
+      "settings": {
+        "foreground": "#b60046",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Org source code",
+      "scope": "meta.embedded.block",
+      "settings": {
+        "foreground": "#4e2e47"
+      }
+    },
+    {
+      "name": "Org dictionary",
+      "scope": "meta.structure.dictionary.value",
+      "settings": {
+        "foreground": "#858585"
+      }
+    },
+    {
+      "name": "Titles and metadata",
+      "scope": "support.type.property-name.org, keyword.control.block.org",
+      "settings": {
+        "foreground": "#7e005e"
+      }
     }
   ],
   "colors": {
