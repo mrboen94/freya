@@ -1,10 +1,10 @@
 {
-  "name": "Frey",
+  "name": "Freya",
   "type": "light",
   "semanticHighlighting": true,
   "semanticTokenColors": {
     "enumMember": {
-      "foreground": "#324b4d"
+      "foreground": "#e700b1"
     },
     "variable.constant": {
       "foreground": "#00abb4"
@@ -42,7 +42,7 @@
       "name": "Foreground",
       "scope": "keyword.operator.class, constant.other, source.php.embed.line",
       "settings": {
-        "foreground": "#2ca0a5",
+        "foreground": "#148589",
         "fontStyle": "bold"
       }
     },
@@ -59,14 +59,14 @@
       "scope": "entity.name.function",
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#048E94"
+        "foreground": "#148589"
       }
     },
     {
       "name": "Variable",
       "scope": "variable",
       "settings": {
-        "foreground": "#048E94"
+        "foreground": "#148589"
       }
     },
     {
@@ -143,6 +143,38 @@
       "settings": {
         "foreground": "#1f72be",
         "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Typescript types",
+      "scope": "entity.name.type, entity.name.type.ts, meta.type.annotation.ts",
+      "settings": {
+        "foreground": "#d000a6",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Typescript Variable other types",
+      "scope": "variable.other.property.ts",
+      "settings": {
+        "foreground": "#148589",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Typescript Object literal",
+      "scope": "variable.other.property.ts",
+      "settings": {
+        "foreground": "#6700ce",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Typescript Variable secondary",
+      "scope": "meta.object.member.ts",
+      "settings": {
+        "foreground": "#148589",
+        "fontStyle": ""
       }
     },
     {
@@ -471,15 +503,16 @@
     "diffEditor.insertedTextBackground": "#e5fbff",
     "diffEditor.removedTextBackground": "#ffc9e733",
     "diffEditor.border": "#357580",
-    "panel.background": "#f9ffff",
+    "panel.background": "#357580",
     "panel.border": "#0093ff59",
-    "panelTitle.activeBorder": "#424242",
-    "panelTitle.activeForeground": "#424242",
-    "panelTitle.inactiveForeground": "#424242bf",
+    "panelTitle.activeBorder": "#ffb700",
+    "panelTitle.activeForeground": "#ffb700",
+    "panelTitle.inactiveForeground": "#cefbff",
     "badge.background": "#00abb4",
-    "badge.foreground": "#eafffd",
-    "terminal.foreground": "#333333",
-    "terminal.selectionBackground": "#00daff18",
+    "badge.foreground": "#ecfeff",
+    "terminal.foreground": "#d5d5d5",
+    "terminal.background": "#333333",
+    "terminal.selectionBackground": "#ff00ae49",
     "terminalCursor.foreground": "#357580",
     "terminalCursor.background": "#ffffff",
     "terminal.border": "#80808059",
