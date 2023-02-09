@@ -2,6 +2,10 @@
 
 Currently in baby stages, change log will have to be fixed later
 
+## [0.0.7]
+
+- Added some typescript semantic highlighting, this is currently just a MVP iteration of this. Colors are not necessarily set in stone.
+
 ## [0.0.6]
 
 - Added support for .json with different styling to not be as messy
