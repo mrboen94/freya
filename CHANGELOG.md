@@ -4,6 +4,12 @@ Currently in baby stages, change log will have to be fixed later
 
 ## [0.0.7]
 
+- Changed color and font styles of = and === operators in typescript.
+- Changed color of semicolons in typescript.
+- Added color and italicized class functions (public, private etc.)
+
+## [0.0.7]
+
 - Added some typescript semantic highlighting, this is currently just a MVP iteration of this. Colors are not necessarily set in stone.
 
 ## [0.0.6]

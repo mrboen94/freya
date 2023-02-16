@@ -146,6 +146,38 @@
       }
     },
     {
+      "name": "Typescript Public function etc.",
+      "scope": "storage.modifier.ts",
+      "settings": {
+        "foreground": "#1f72be",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Typescript operators",
+      "scope": "keyword.operator.comparison.ts",
+      "settings": {
+        "foreground": "#f77700",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Typescript semicolons",
+      "scope": "punctuation.terminator.statement.ts",
+      "settings": {
+        "foreground": "#bbbbbb",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Typescript assignment",
+      "scope": "keyword.operator.assignment.ts",
+      "settings": {
+        "foreground": "#f77700",
+        "fontStyle": "bold"
+      }
+    },
+    {
       "name": "Typescript types",
       "scope": "entity.name.type, entity.name.type.ts, meta.type.annotation.ts",
       "settings": {
@@ -540,10 +572,10 @@
     "editorGroupHeader.tabsBorder": "#ffffff",
     "tab.activeForeground": "#357580",
     "tab.border": "#00baba",
-    "tab.activeBackground": "#e4ecec",
-    "tab.activeBorder": "#949494",
-    "tab.activeBorderTop": "#00000000",
-    "tab.inactiveBackground": "#f3fafa",
+    "tab.inactiveBackground": "#e4ecec",
+    "tab.activeBorder": "#f9ffff",
+    "tab.activeBorderTop": "#00baba",
+    "tab.activeBackground": "#f9ffff",
     "tab.inactiveForeground": "#333333b3",
     "tab.hoverBackground": "#d7ecec",
     "scrollbarSlider.background": "#35758022",
