@@ -15,3 +15,6 @@ themes/syntaxHighlighting.json
 # Misc
 .vscodeignore
 .gitignore
+
+# Images
+media/
