@@ -1,2 +1,4 @@
 vsc-extension-quickstart.md
 testfile.js
+dist/
+node_modules/

@@ -7,9 +7,10 @@
     "url": "https://github.com/mrboen94/freya"
   },
   "publisher": "bivrost",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "engines": {
-    "vscode": "^1.68.0"
+    "vscode": "^1.68.0",
+    "node": ">=18.0.0"
   },
   "categories": [
     "Themes"
@@ -27,5 +28,28 @@
         "path": "./themes/Freya Dark-color-theme.json"
       }
     ]
+  },
+  "scripts": {
+    "build": "tsx scripts/build.ts",
+    "validate": "tsx scripts/build.ts --validate-only",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint \"scripts/**/*.ts\"",
+    "format": "prettier --write \"scripts/**/*.ts\"",
+    "vscode:prepublish": "npm run build",
+    "package:vsix": "vsce package --target universal"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.0",
+    "@typescript-eslint/eslint-plugin": "^8.18.2",
+    "@typescript-eslint/parser": "^8.18.2",
+    "@vscode/vsce": "^3.2.1",
+    "eslint": "^9.18.0",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.46.4",
+    "yaml": "^2.6.1",
+    "zod": "^3.24.1"
   }
 }

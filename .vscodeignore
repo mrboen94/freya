@@ -1,9 +1,22 @@
-# Exclude development and CI files
-.github/
-.vscode/
+# Build sources and artifacts
+scripts/
+theme/
+dist/
 
 # Node/npm
 node_modules/
+bun.lockb
+package-lock.json
+
+# TypeScript and tooling config
+tsconfig.json
+eslint.config.js
+.prettierrc
+
+# Development and CI files
+.github/
+.vscode/
+.gitignore
 
 # OS / editor detritus
 .DS_Store
@@ -12,9 +25,5 @@ node_modules/
 *.tmTheme
 themes/syntaxHighlighting.json
 
-# Misc
-.vscodeignore
-.gitignore
-
-# Images
-media/
+# Images (keep for marketplace display)
+# media/

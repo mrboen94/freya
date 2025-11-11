@@ -7,7 +7,7 @@ on:
     branches: ["**"]
 
 jobs:
-  validate-and-package:
+  build-and-package:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -17,8 +17,24 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
 
-      - name: Validate JSON files (package.json and themes)
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate source YAML
+        run: npm run validate
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build themes
+        run: npm run build
+
+      - name: Validate generated JSON files
         shell: bash
         run: |
           jq -e . package.json > /dev/null
@@ -36,3 +52,15 @@ jobs:
         with:
           name: freya-vsix
           path: "*.vsix"
+
+      - name: Upload WezTerm themes
+        uses: actions/upload-artifact@v4
+        with:
+          name: wezterm-themes
+          path: dist/wezterm/*
+
+      - name: Upload Neovim colorscheme
+        uses: actions/upload-artifact@v4
+        with:
+          name: neovim-colorscheme
+          path: dist/neovim/freya/**
