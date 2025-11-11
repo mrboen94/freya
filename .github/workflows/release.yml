@@ -49,7 +49,6 @@ jobs:
 
   marketplace-publish:
     needs: package-and-release
-    if: ${{ secrets.VSCE_PAT != '' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
