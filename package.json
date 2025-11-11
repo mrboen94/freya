@@ -7,7 +7,7 @@
     "url": "https://github.com/mrboen94/freya"
   },
   "publisher": "bivrost",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.68.0"
   },
