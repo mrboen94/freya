@@ -1,6 +1,6 @@
 {
   "$schema": "vscode://schemas/color-theme",
-  "name": "Freya Theme Dark",
+  "name": "Freya Dark",
   "type": "dark",
   "semanticHighlighting": true,
   "semanticTokenColors": {

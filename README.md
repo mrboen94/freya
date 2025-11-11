@@ -9,10 +9,10 @@
 ## Screenshots
 
 Light
-![Freya Light](media/Freya-light-theme.png)
+![Freya Light](media/freya-light.png)
 
 Dark
-![Freya Dark](media/Freya-dark-theme.png)
+![Freya Dark](media/freya-dark.png)
 
 ## Blue pastel colors for your comfort
 
