@@ -1,17 +1,35 @@
 {
-  "name": "Freya",
+  "$schema": "vscode://schemas/color-theme",
+  "name": "Freya Light",
   "type": "light",
   "semanticHighlighting": true,
   "semanticTokenColors": {
-    "enumMember": {
-      "foreground": "#e700b1"
-    },
-    "variable.constant": {
-      "foreground": "#00abb4"
-    },
-    "variable.defaultLibrary": {
-      "foreground": "#94b0b2"
-    }
+    "namespace": { "foreground": "#d000a6" },
+    "type": { "foreground": "#d000a6" },
+    "class": { "foreground": "#ff8a15" },
+    "interface": { "foreground": "#d000a6" },
+    "struct": { "foreground": "#d000a6" },
+    "typeParameter": { "foreground": "#d000a6" },
+    "enum": { "foreground": "#d000a6" },
+    "enumMember": { "foreground": "#e700b1" },
+
+    "function": { "foreground": "#148589" },
+    "method": { "foreground": "#148589" },
+    "property": { "foreground": "#148589" },
+    "parameter": { "foreground": "#148589" },
+    "variable": { "foreground": "#148589" },
+    "variable.readonly": { "foreground": "#04ABB4" },
+    "variable.constant": { "foreground": "#00abb4" },
+    "variable.defaultLibrary": { "foreground": "#94b0b2" },
+
+    "string": { "foreground": "#1f72be" },
+    "number": { "foreground": "#c57600" },
+    "boolean": { "foreground": "#c500bb" },
+    "regexp": { "foreground": "#30548a" },
+
+    "keyword": { "foreground": "#1f72be" },
+    "operator": { "foreground": "#6d2200" },
+    "decorator": { "foreground": "#d000a6" }
   },
   "tokenColors": [
     {
@@ -102,13 +120,6 @@
     },
     {
       "name": "String Link, Regular Expression...",
-      "scope": "meta.tag, declaration.tag",
-      "settings": {
-        "foreground": "#1F271B"
-      }
-    },
-    {
-      "name": "String Link, Regular Expression...",
       "scope": "string.other.link, string.regexp, meta.tag, declaration.tag, markup.deleted.git_gutter",
       "settings": {
         "foreground": "#30548a"
@@ -146,6 +157,14 @@
       }
     },
     {
+      "name": "Keywords (generic)",
+      "scope": "keyword, storage.type, storage.modifier",
+      "settings": {
+        "foreground": "#1f72be",
+        "fontStyle": "bold"
+      }
+    },
+    {
       "name": "Typescript Public function etc.",
       "scope": "storage.modifier.ts",
       "settings": {
@@ -155,7 +174,7 @@
     },
     {
       "name": "Typescript operators",
-      "scope": "keyword.operator.comparison.ts",
+      "scope": "keyword.operator.comparison, keyword.operator.comparison.ts",
       "settings": {
         "foreground": "#f77700",
         "fontStyle": ""
@@ -163,7 +182,7 @@
     },
     {
       "name": "Typescript semicolons",
-      "scope": "punctuation.terminator.statement.ts",
+      "scope": "punctuation.terminator.statement, punctuation.terminator.statement.ts",
       "settings": {
         "foreground": "#bbbbbb",
         "fontStyle": ""
@@ -171,7 +190,7 @@
     },
     {
       "name": "Typescript assignment",
-      "scope": "keyword.operator.assignment.ts",
+      "scope": "keyword.operator.assignment, keyword.operator.assignment.ts",
       "settings": {
         "foreground": "#f77700",
         "fontStyle": "bold"
@@ -187,7 +206,7 @@
     },
     {
       "name": "Typescript Variable other types",
-      "scope": "variable.other.property.ts",
+      "scope": "variable.other.property, variable.other.property.ts",
       "settings": {
         "foreground": "#148589",
         "fontStyle": ""
@@ -195,7 +214,7 @@
     },
     {
       "name": "Typescript Object literal",
-      "scope": "variable.other.property.ts",
+      "scope": "meta.object-literal.key, meta.object-literal.key.ts",
       "settings": {
         "foreground": "#6700ce",
         "fontStyle": ""

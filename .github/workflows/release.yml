@@ -1,0 +1,71 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  package-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate JSON files
+        shell: bash
+        run: |
+          jq -e . package.json > /dev/null
+          jq -e . themes/"Freya Light-color-theme.json" > /dev/null
+          jq -e . themes/"Freya Dark-color-theme.json" > /dev/null
+
+      - name: Check tag matches package.json version
+        id: version
+        shell: bash
+        run: |
+          PKG_VERSION=$(jq -r .version package.json)
+          TAG_REF="${GITHUB_REF#refs/tags/}"
+          if [[ "v$PKG_VERSION" != "$TAG_REF" ]]; then
+            echo "Tag $TAG_REF does not match package.json version v$PKG_VERSION" >&2
+            exit 1
+          fi
+          echo "pkg_version=$PKG_VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Install vsce
+        run: npm i -g @vscode/vsce
+
+      - name: Package VSIX
+        run: vsce package --no-dependencies --allow-missing-repository
+
+      - name: Upload VSIX to release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: "*.vsix"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  marketplace-publish:
+    needs: package-and-release
+    if: ${{ secrets.VSCE_PAT != '' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install vsce
+        run: npm i -g @vscode/vsce
+
+      - name: Publish to VS Code Marketplace
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        run: vsce publish -p "$VSCE_PAT"

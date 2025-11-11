@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    branches: ["**"]
+
+jobs:
+  validate-and-package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate JSON files (package.json and themes)
+        shell: bash
+        run: |
+          jq -e . package.json > /dev/null
+          jq -e . themes/"Freya Light-color-theme.json" > /dev/null
+          jq -e . themes/"Freya Dark-color-theme.json" > /dev/null
+
+      - name: Install vsce
+        run: npm i -g @vscode/vsce
+
+      - name: Package VS Code extension (.vsix)
+        run: vsce package --no-dependencies --allow-missing-repository
+
+      - name: Upload .vsix artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: freya-vsix
+          path: "*.vsix"
