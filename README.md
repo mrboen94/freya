@@ -6,6 +6,14 @@
 [![Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/bivrost.mrboen94)](https://marketplace.visualstudio.com/items?itemName=bivrost.mrboen94)
 [![Latest Release](https://img.shields.io/github/v/release/mrboen94/freya?sort=semver)](https://github.com/mrboen94/freya/releases)
 
+## Screenshots
+
+Light
+![Freya Light - TypeScript](media/freya-light-typescipt.png)
+
+Dark
+![Freya Dark - TypeScript](media/freya-dark-typescipt.png)
+
 ## Blue pastel colors for your comfort
 
 A calm, relaxing blue theme with hints of vibrant colors, available in both light and dark variants.
