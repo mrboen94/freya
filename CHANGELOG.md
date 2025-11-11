@@ -4,8 +4,8 @@
 ### Added
 - GitHub Actions CI workflow to validate JSON, package, and upload VSIX artifacts
 - GitHub Actions Release workflow to package on tag and attach VSIX; optional Marketplace publish with `VSCE_PAT`
-- `.vscodeignore` to trim non-essential files from the published package
-- README badges and CI/CD documentation
+- `.vscodeignore` to trim non-essential files from the published package (and ensured it is tracked by Git)
+- README badges: CI, Release, VS Code Marketplace, and Latest Release; plus CI/CD documentation
 
 ## [0.1.0] - 2024-01-11
 

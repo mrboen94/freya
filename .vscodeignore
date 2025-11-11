@@ -1,0 +1,17 @@
+# Exclude development and CI files
+.github/
+.vscode/
+
+# Node/npm
+node_modules/
+
+# OS / editor detritus
+.DS_Store
+
+# Legacy/reference assets not used by the extension runtime
+*.tmTheme
+themes/syntaxHighlighting.json
+
+# Misc
+.vscodeignore
+.gitignore
