@@ -3,6 +3,7 @@
 [![CI](https://github.com/mrboen94/freya/actions/workflows/ci.yml/badge.svg)](https://github.com/mrboen94/freya/actions/workflows/ci.yml)
 [![Release](https://github.com/mrboen94/freya/actions/workflows/release.yml/badge.svg)](https://github.com/mrboen94/freya/actions/workflows/release.yml)
 [![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/bivrost.mrboen94)](https://marketplace.visualstudio.com/items?itemName=bivrost.mrboen94)
+[![Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/bivrost.mrboen94)](https://marketplace.visualstudio.com/items?itemName=bivrost.mrboen94)
 [![Latest Release](https://img.shields.io/github/v/release/mrboen94/freya?sort=semver)](https://github.com/mrboen94/freya/releases)
 
 ## Blue pastel colors for your comfort
