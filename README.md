@@ -9,10 +9,10 @@
 ## Screenshots
 
 Light
-![Freya Light - TypeScript](media/freya-light-typescipt.png)
+![Freya Light](media/Freya-light-theme.png)
 
 Dark
-![Freya Dark - TypeScript](media/freya-dark-typescipt.png)
+![Freya Dark](media/Freya-dark-theme.png)
 
 ## Blue pastel colors for your comfort
 
